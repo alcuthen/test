@@ -2,8 +2,11 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import {About} from './src/pages/About/About';
-import {Home} from './src/pages/Home/Home';
+
+import { Home } from './src/pages/Home';
+import { About } from './src/pages/About';
+import { Third } from '.src/pages/Third';
+
 
 export default function App() {
   
@@ -28,6 +31,10 @@ export default function App() {
         <Stack.Screen 
         name="About" 
         component={ About }/>
+
+        <Stack.Screen 
+        name="Third" 
+        component={ Third }/>
        
       </Stack.Navigator>
     </NavigationContainer>

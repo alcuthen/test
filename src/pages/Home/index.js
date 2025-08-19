@@ -11,8 +11,9 @@ export function Home() {
 
     <View style={styles.container}>
       <Text>This is Home screen</Text>
-
-      <Button title='Go to' onPress={() => navigation.navigate("About")} />
+      <View>
+        <Button title='Go About' onPress={() => navigation.navigate("About")} />
+      </View>
     </View>
   );
 }

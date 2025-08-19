@@ -1,9 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { useNavegation } from 'react-navegate/navegation';
+
 
 export function About() {
+  const navigation = useNavegation()
   return (
     <View style={styles.container}>
       <Text>This is About screen</Text>
+      <View>
+        <Button title='Go to Third' onPress={ () => { navigotion = useNavegation('About')}}></Button>
+      </View>
     </View>
   );
 }
